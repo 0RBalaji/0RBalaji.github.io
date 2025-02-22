@@ -25,6 +25,7 @@ import { SoftwareToolsSection } from "@/components/sections/SoftwareToolsSection
 import { IndustryCollaborationsSection } from "@/components/sections/IndustryCollaborationsSection";
 import { AchievementsSection } from "@/components/sections/AchievementsSection";
 import { FeaturedProjectsSection } from "@/components/sections/FeaturedProjectsSection";
+import { GetInTouchSection } from "@/components/sections/GetInTouchSection";
 
 const Index = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -313,6 +314,12 @@ const Index = () => {
         staggerContainer={staggerContainer}
         cardVariants={cardVariants}
         backgroundVariants={backgroundVariants}
+      />
+
+      <GetInTouchSection
+        handleContactClick={handleContactClick}
+        fadeInUp={fadeInUp}
+        staggerContainer={staggerContainer}
       />
 
       <ProjectDialog 
