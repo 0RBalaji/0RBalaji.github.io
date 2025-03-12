@@ -11,7 +11,7 @@ export const AchievementsSection = ({ fadeInUp, staggerContainer }: Achievements
   const achievements = [
     {
       icon: <Trophy className="w-8 h-8 text-primary" />,
-      title: "Best Project Award",
+      title: "Best project Award",
       description: "Awarded for innovative robotics solution at university showcase"
     },
     {
