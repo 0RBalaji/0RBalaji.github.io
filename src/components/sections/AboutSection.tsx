@@ -36,7 +36,7 @@ export const AboutSection = ({ fadeInUp, staggerContainer }: AboutSectionProps) 
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Education</h3>
                 <p className="text-sm text-muted-foreground">
-                  B.Tech in Electronics and Instrumentation Engineering
+                  B.E in Automation & Robotics
                   KLE Technological University
                 </p>
               </motion.div>
@@ -46,8 +46,7 @@ export const AboutSection = ({ fadeInUp, staggerContainer }: AboutSectionProps) 
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Focus Areas</h3>
                 <p className="text-sm text-muted-foreground">
-                  Robotics, Industrial Automation, Computer Vision, ROS 2, 
-                  Path Planning, SLAM
+                  Robotics, Industrial Automation, ROS 2, Robot Perception, Path Planning
                 </p>
               </motion.div>
               <motion.div variants={fadeInUp} className="glass p-6 rounded-xl hover:bg-white/5 transition-duration-300">

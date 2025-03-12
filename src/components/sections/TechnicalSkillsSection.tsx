@@ -38,27 +38,46 @@ export const TechnicalSkillsSection = ({
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {skillCategories.map((category, index) => (
-            <motion.div key={index} variants={fadeInUp}>
+            <motion.div key={index} variants={fadeInUp} className="flex">
               <motion.div
                 variants={cardVariants}
                 initial="initial"
                 whileHover="hover"
                 animate="animate"
+                className="w-full"
               >
-                <Card className="p-6 h-full neo-blur hover:bg-white/5 transition-colors duration-300">
-                  <div className="flex items-center gap-4 mb-6">
-                    {category.icon}
-                    <h3 className="text-xl font-semibold">{category.title}</h3>
+                <Card className="p-6 h-full neo-blur hover:bg-white/5 transition-colors duration-300 flex flex-col">
+                  <div className="flex items-center gap-4 mb-6 pb-3 border-b border-white/10">
+                    <div className="p-2.5 rounded-xl bg-white/5">
+                      {category.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold text-gradient">{category.title}</h3>
                   </div>
-                  <div className="space-y-4">
+                  <div className="flex-1 grid gap-2">
                     {category.skills.map((skill: any, idx: number) => (
-                      <div key={idx} className="flex items-center">
-                        {skill.icon}
-                        <span>{skill.name}</span>
+                      <div 
+                        key={idx} 
+                        className="group flex items-center p-2.5 rounded-lg hover:bg-white/5 transition-all duration-200"
+                      >
+                        <div className="flex items-center gap-3 w-full">
+                          <div className="p-1.5 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors duration-200">
+                            {skill.icon}
+                          </div>
+                          <span className="text-sm text-white/80 group-hover:text-white transition-colors duration-200">
+                            {skill.name}
+                          </span>
+                        </div>
                       </div>
+                    ))}
+                    {/* Add empty slots to maintain consistent height */}
+                    {Array.from({ length: Math.max(0, 7 - category.skills.length) }).map((_, idx) => (
+                      <div 
+                        key={`empty-${idx}`} 
+                        className="h-[44px] rounded-lg border border-dashed border-white/5"
+                      />
                     ))}
                   </div>
                 </Card>

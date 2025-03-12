@@ -4,7 +4,7 @@ import {
   Bot, Cpu, Github, Linkedin, Mail, CircuitBoard, GraduationCap, 
   Briefcase, Home, Trophy, Award, BadgeCheck, Star, Code, 
   Settings, Terminal, Database, Brain, Cog, ExternalLink,
-  Navigation, Eye, GitBranch, Search, Map, Router, 
+  Navigation, Eye, GitBranch, Scan, Search, Map, Router, 
   FileCode, Binary, Coffee, Box, Database as DbIcon,
   Shapes, Ruler, Pencil, Boxes, Wrench, Wind, Leaf,
   Microchip, Radio, Laptop, Component, Workflow,
@@ -108,6 +108,14 @@ const Index = () => {
       name: "Kinematics",
       icon: <GitBranch className="w-4 h-4 mr-2" />,
       image: "/kinematics.png"
+    }, {
+      name: "Simulation",
+      icon: <Play className="w-4 h-4 mr-2" />,
+      image: "/simulation.png"
+    }, {
+      name: "Reverse Engineering",
+      icon: <Scan className="w-4 h-4 mr-2" />,
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
     }],
     bgImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
   }, {
@@ -155,13 +163,17 @@ const Index = () => {
       icon: <Leaf className="w-4 h-4 mr-2" />,
       image: "/sustainability.png"
     }, {
-      name: "Simulation",
+      name: "Motion Study",
       icon: <Play className="w-4 h-4 mr-2" />,
-      image: "/simulation.png"
+      image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
     }, {
       name: "FEA",
       icon: <Ruler className="w-4 h-4 mr-2" />,
       image: "/fea.png"
+    }, {
+      name: "3D Printing",
+      icon: <Boxes className="w-4 h-4 mr-2" />,
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
     }],
     bgImage: "https://images.unsplash.com/photo-14887235947-a955ef187fcc"
   }, {
@@ -180,7 +192,7 @@ const Index = () => {
       icon: <Radio className="w-4 h-4 mr-2" />,
       image: "/spi.png"
     }],
-    bgImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    bgImage: "https://images.unsplash.com/photo-1498058792275-0ad4aaf24ca7"
   }, {
     title: "Embedded Development",
     icon: <Microchip className="w-10 h-10" />,
@@ -221,6 +233,10 @@ const Index = () => {
       name: "IoT",
       icon: <Wifi className="w-4 h-4 mr-2" />,
       image: "/iot.png"
+    }, {
+      name: "Fleet Management",
+      icon: <Map className="w-4 h-4 mr-2" />,
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
     }],
     bgImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
   }];
