@@ -36,7 +36,7 @@ export const AboutSection = ({ fadeInUp, staggerContainer }: AboutSectionProps) 
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Education</h3>
                 <p className="text-sm text-muted-foreground">
-                  B.E in Automation & Robotics
+                  B.E. in Automation & Robotics Engineering
                   KLE Technological University
                 </p>
               </motion.div>
